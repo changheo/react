@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+/* eslint-disable */
+import React, { useState, Component } from 'react';
+import Gnb from './components/Gnb.js';
+import Subject from './components/Subject.js';
+import Content from './components/Contents.js';
+import Index from './index.css';
+import Header from './components/Header';
+import DayList from './components/DayList'
+import Day from './components/Day'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render(){
+    return (
+      <div className="App">
+        <Header />
+        <DayList />
+        <Day />
+      </div>
+    );
+  }
 }
-
 export default App;
